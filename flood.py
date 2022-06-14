@@ -36,7 +36,11 @@ except ImportError:
 	sys.exit(1)
 		
 time.sleep(3)
-os.system("clear")
+def clear():
+	if platform.system() == 'Linux':
+		os.system("clear")
+	if platform.system() == 'Windows':
+		os.system("cls")
 
 tprint("Ping - Flooder")
 print("Script by Buck3ts41", '\n')
