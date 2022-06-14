@@ -41,6 +41,7 @@ def clear():
 		os.system("clear")
 	if platform.system() == 'Windows':
 		os.system("cls")
+clear()
 
 tprint("Ping - Flooder")
 print("Script by Buck3ts41", '\n')
