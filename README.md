@@ -6,5 +6,28 @@ slow down web servers.
 
 Report any issues.
 
-I will update it for running on windows machine.
-For now i suggest linux only.
+INSTALLATION
+
+Linux:
+
+git clone https://github.com/Buck3ts41/Ping-Flodder
+cd Ping-Flooder
+python3 flood.py
+
+the tool automaticaly install dependencies
+
+Windows:
+
+Download as zip
+cd Ping-Flooder-main
+python flood.py
+
+the tool automaticaly install dependencies
+
+Termux:
+
+Currently unsupported
+
+USAGE
+
+Edit the signed line in the flood.py file, then start it.
