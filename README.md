@@ -10,15 +10,17 @@ INSTALLATION
 
 Linux:
 
-git clone https://github.com/Buck3ts41/Ping-Flodder
-cd Ping-Flooder
-python3 flood.py
+open terminal and paste this command:
+
+git clone https://github.com/Buck3ts41/Ping-Flodder && cd Ping-Flooder && nano flood.py
 
 the tool automaticaly install dependencies
 
 Windows:
 
 Download as zip
+open terminal:
+
 cd Ping-Flooder-main
 python flood.py
 
