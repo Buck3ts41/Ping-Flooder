@@ -47,7 +47,7 @@ clear()
 
 tprint("Ping - Flooder")
 print("Script by Buck3ts41", '\n')
-print("V 1.2")
+print("V 1.5")
 if platform.system()== 'Linux':
 	print("Ping Flooder running on linux", '\n')
 if platform.system()== 'Windows':
