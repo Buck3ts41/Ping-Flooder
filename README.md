@@ -12,6 +12,7 @@ Report any issues.
 
 open terminal and paste this command:
 git clone https://github.com/Buck3ts41/Ping-Flodder && cd Ping-Flooder && bash start-linux.sh
+
 the tool automaticaly install dependencies
 
 #Windows:
