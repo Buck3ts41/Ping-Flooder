@@ -6,30 +6,21 @@ slow down web servers.
 
 Report any issues.
 
-INSTALLATION
+# INSTALLATION
 
-Linux:
+#Linux:
 
 open terminal and paste this command:
-
-git clone https://github.com/Buck3ts41/Ping-Flodder && cd Ping-Flooder && nano flood.py
-
+git clone https://github.com/Buck3ts41/Ping-Flodder && cd Ping-Flooder && bash start-linux.sh
 the tool automaticaly install dependencies
 
-Windows:
+#Windows:
 
 Download as zip
-open terminal:
-
-cd Ping-Flooder-main
-python flood.py
-
+Run start-win.bat
 the tool automaticaly install dependencies
 
-Termux:
+#Termux:
 
 Currently unsupported
 
-USAGE
-
-Edit the signed line in the flood.py file, then start it.
