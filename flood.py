@@ -36,7 +36,7 @@ def vrb():
 	global pwr
 	global target
 	pwr = int(input("Thread: "))
-	target = input("Target ip: ")  # edit this line with you current target
+	target = input("Target ip: ") 
 
 def clear():
 	if platform.system() == 'Linux':
